@@ -1,0 +1,361 @@
+
+/************************************/
+/* Angular CSS                      */
+/************************************/
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+
+/************************************/
+/* LGE Font Family                  */
+/************************************/
+@font-face {
+  font-family: 'BryantLGLight';
+  src: url('../fonts/bryantlg-light-webfont.eot');
+  src: url('../fonts/bryantlg-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/bryantlg-light-webfont.woff') format('woff'), url('../fonts/bryantlg-light-webfont.ttf') format('truetype'), url('../fonts/bryantlg-light-webfont.svg#BryantLGLight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BryantLGMedium';
+  src: url('../fonts/bryantlg-medium-webfont.eot');
+  src: url('../fonts/bryantlg-medium-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/bryantlg-medium-webfont.woff') format('woff'), url('../fonts/bryantlg-medium-webfont.ttf') format('truetype'), url('../fonts/bryantlg-medium-webfont.svg#BryantLGMedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BryantLGRegular';
+  src: url('../fonts/bryantlg-regular-webfont.eot');
+  src: url('../fonts/bryantlg-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/bryantlg-regular-webfont.woff') format('woff'), url('../fonts/bryantlg-regular-webfont.ttf') format('truetype'), url('../fonts/bryantlg-regular-webfont.svg#BryantLGRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "BryantLGRegular";
+  background: #fafafa;
+  color: #333;
+  padding-top: 50px;
+}
+
+/************************************/
+/* Header Customizing               */
+/************************************/
+.navbar {
+	margin-bottom: 0px;	
+}
+
+.navbar .navbar-top {
+	height: 30px;
+	padding-top: 5px;
+	background-color: #F5F5F5;
+	transition: all 0.1s ease-out 0s;
+	-webkit-transition: all 0.1s ease-out 0s;
+	-moz-transition: all 0.1s ease-out 0s;
+	-ms-transition: all 0.1s ease-out 0s;
+	-o-transition: all 0.1s ease-out 0s;
+	font-size: 11px;
+	line-height: 11px;
+	text-transform: uppercase;
+}
+
+.navbar .container-fluid {
+	background-color:#23282E;
+}
+
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand {
+	color: #FEFEFE;
+}
+
+.navbar-fixed-top {
+	position: fixed;
+	top: 25px;
+	left: 0;
+	right: 0;
+}
+
+.menu-header {
+	position: fixed;
+	top: 0px;
+	height: 25px;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1031;
+}
+
+.dropdown-menu {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 50px;
+}
+
+
+/************************************/
+/* Main Customizing                 */
+/************************************/
+.featured-title {
+	text-align:center; 
+	margin-bottom:20px; 
+	font-size: 20px;
+}
+
+
+/* 
+////////////////////////////////////////////////////////////////////////////////
+//
+// Twitter Bootstrap Override
+//
+////////////////////////////////////////////////////////////////////////////////
+*/
+/* navbar font-family */
+.nav {
+	font-family: "BryantLGMedium";
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #ffffff;
+  background-color: #D80546;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #D80546;
+  border-color: #C50B31;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+	background-color: #940028;
+	background-position: 0 -15px;
+}
+
+.btn-primary:active, .btn-primary.active {
+	background-color: #940028;
+	border-color: #245580;
+}
+
+/* responsable width */
+@media (min-width: 968px) {
+  .container {
+    width: 950px;
+  }
+}
+
+@media (min-width: 1092px) {
+  .container {
+    width: 1070px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .container {
+    width: 1270px;
+  }
+}
+
+/***************************************/
+/* main/partials/featured-product.html */
+/***************************************/
+.thumbnail {
+	max-width: 320px;
+	display: block;
+	padding: 5px;
+	margin-bottom: 10px;
+	line-height: 1.5;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	-webkit-transition: border .2s ease-in-out;
+	-o-transition: border .2s ease-in-out;
+	transition: border .2s ease-in-out;
+}
+
+.thumbnail .content {
+	padding: 3px;
+	font: 13px/18px 'BryantLGRegular';
+	color: #655c5a;
+	overflow: hidden;
+}
+
+.thumbnail .content .title {
+	font: 15px/18px 'BryantLGMedium';
+	margin-bottom: 7px;
+	color: #222222;
+	height: 36px;
+	max-height: 36px;
+}
+
+.thumbnail .content .desc {
+	padding: 3px;
+	font: 13px/18px 'BryantLGLight';
+	color: #655c5a;
+	height: 72px;
+	max-height: 72px;
+    overflow: hidden;
+    text-overflow: ellipsis;     /** IE6+, Firefox 7+, Opera 11+, Chrome, Safari **/
+    -o-text-overflow: ellipsis;  /** Opera 9 & 10 **/
+}
+
+.thumbnail .new_badge {
+	width: 60px;
+	height: 60px;
+	background: url('../img/badge-new.png') no-repeat;
+	text-indent: -9999px;
+	position: absolute;
+	top: -10px;
+	left: -1px;
+	z-index: 20;
+}
+
+.thumbnail .image {
+	margin-bottom: 10px;
+	overflow: hidden;
+	position: relative;
+	z-index: 10;
+}
+
+.thumbnail .image .price {
+	position: absolute;
+	background-color: black;
+	color: white;
+	opacity: 0.8;
+	padding: 10px 20px;
+	font: 16px/16px 'BryantLGMedium';
+	font-weight: 600;
+	bottom: 5px;
+	right: 5px;
+}
+
+
+
+/************************************/
+/* */
+/************************************/
+html, body {
+  height: 100%;
+}
+
+.img-home-portfolio,
+.img-customer,
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.tab-pane {
+  margin-top: 15px;
+}
+
+/* Page Sections */
+.section,
+.section-colored {
+  padding: 50px 0;
+}
+
+.section-colored {
+  background-color: #fa7070;
+ /* change this to change the background color of a colored section */
+}
+
+/* Footer Styles */
+.footer {
+  padding-top: 10px;
+  padding-bottom: 50px;
+  background-color: #1f1f1f;
+}
+
+.footer_copyright {
+	font-family: 'BryantLGLight';
+	color: white;
+	font-size: 14px;
+}
+
+
+.sidebar {
+  margin-top: 40px;
+}
+
+.sidebar ul {
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #cccccc;
+}
+
+/* Half Page Height Carousel Customization */
+.carousel {
+  height: 420px;
+}
+
+.item,
+.active,
+.carousel-inner {
+  height: 100%;
+}
+
+.fill {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Social Icons Styles */
+.list-social-icons {
+  margin-bottom: 45px;
+}
+
+.tooltip-social a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.facebook-link a:hover {
+  color: #3b5998;
+}
+
+.linkedin-link a:hover {
+  color: #007fb1;
+}
+
+.twitter-link a:hover {
+  color: #39a9e0;
+}
+
+.google-plus-link a:hover {
+  color: #d14836;
+}
+
+/* Service Page Styles */
+.service-icon {
+  font-size: 50px;
+}
+
+/* 404 Page Styles */
+.error-404 {
+  font-size: 8em;
+}
+
+/* Pricing Page Styles */
+.price {
+  font-size: 4em;
+}
+
+.price-cents {
+  vertical-align: super;
+  font-size: 50%;
+}
+
+.price-month {
+  font-size: 35%;
+  font-style: italic;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .carousel {
+    height: 100%;
+    /* increases the carousel height so it looks good on phones */
+  }
+}

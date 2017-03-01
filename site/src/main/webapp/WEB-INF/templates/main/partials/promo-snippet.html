@@ -1,0 +1,19 @@
+
+		<div class="container">
+
+           <div class="row">
+               <div class="col-lg-12">
+               
+               	<blc:content contentType="Homepage Middle Promo Snippet" /> 
+		        <a th:href="@{/register}" th:if="${contentItem !=null and contentItem['htmlContent'] !=null}" style="text-decoration:none">
+		            <h4> 
+		            	<div style="color:white" th:utext="${contentItem['htmlContent']}"></div> 
+		            </h4>
+		        </a>
+		        
+               </div>
+           </div>
+           <!-- /.row -->
+
+       </div>
+       <!-- /.container -->

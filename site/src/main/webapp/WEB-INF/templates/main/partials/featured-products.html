@@ -1,0 +1,15 @@
+		
+    <div class="container">
+
+         <div class="row">
+         	<blc:content contentType="Homepage Featured Products Title" />  
+      	      <div th:if="${contentItem !=null and contentItem['messageText'] !=null}" 
+      	           class="col-lg-12 col-md-12 col-sm-12 col-xs-12 featured-title" 
+      	           th:text="${contentItem['messageText']}"></div>
+      	
+             <ul id="products" class="group">
+	            <li th:each="product : ${products}" th:object="${product}" th:include="catalog/partials/productListItem" class="product_container"></li>
+	         </ul>
+         </div>
+          
+    </div>

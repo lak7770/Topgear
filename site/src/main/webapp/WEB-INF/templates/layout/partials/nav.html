@@ -1,0 +1,23 @@
+  
+<div th:remove="all">
+    <!--
+         This template displays the navigation of the site by looking up the category named "Nav"
+         and building a list of the categories sub-categories.                          
+    -->
+</div>
+
+<blc:categories resultVar="navCategories" parentCategory="Primary Nav" maxResults="6" />
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+  <!-- cart login/register in TOP Header  -->
+  <!-- <div class="navbar-top" th:include="/layout/partials/header"></div> -->
+  
+  <!-- category 2level menu in Responsible Menu -->
+  <!-- <div ng-if="isSmartDevice" class="container-fluid ng-cloak" th:include="/layout/partials/menu-mobile"></div>
+  <div ng-if="!isSmartDevice" class="container-fluid ng-cloak" th:include="/layout/partials/menu-desktop"></div> -->
+  
+  <div class="container-fluid" th:include="/layout/partials/menu"></div>
+  
+</div>
+    
